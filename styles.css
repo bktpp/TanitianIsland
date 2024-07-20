@@ -1,0 +1,19 @@
+body {
+  color: rgb(255, 119, 0);
+}
+
+.nav {
+  display: flex;
+  border: 2px orange solid;
+  justify-content: space-between;
+}
+
+.nav-links {
+  border: 2px red solid;
+  width: 40%;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+}
