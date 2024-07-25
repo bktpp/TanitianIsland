@@ -51,6 +51,11 @@ header {
 .main-left-content {
   width: 1000px;
   height: 500px;
+
+  & img {
+    background-size: cover;
+    border-radius: 6px;
+  }
 }
 
 .main-img {
@@ -70,5 +75,6 @@ header {
     padding: 50px;
     background-color: rgb(75, 114, 255);
     color: aliceblue;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   }
 }
