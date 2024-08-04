@@ -10,6 +10,20 @@ img {
   height: 100%;
 }
 
+.cta-btn {
+  text-align: center;
+  padding: 50px;
+  & a {
+    background-color: aqua;
+    padding: 10px 200px;
+  }
+}
+
+.back-btn {
+  border: 2px red solid;
+  padding-left: 150px;
+}
+
 a {
   text-decoration: none;
 }
@@ -27,6 +41,7 @@ li {
 
 .nav-links {
   width: 60%;
+  text-transform: uppercase;
 }
 
 .nav-links ul {
@@ -36,7 +51,7 @@ li {
 
 header {
   text-align: center;
-  padding: 50px;
+  padding: 50px 50px 10px;
 }
 
 .container {
@@ -54,7 +69,7 @@ header {
 
   & img {
     background-size: cover;
-    border-radius: 6px;
+    border-radius: 20px;
   }
 }
 
@@ -76,5 +91,38 @@ header {
     background-color: rgb(75, 114, 255);
     color: aliceblue;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.main-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+
+  & .main-gallery-item {
+    width: 500px;
+
+    & img {
+      border-radius: 10px;
+      box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+.selected-item-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  & .selected-item-photo,
+  .selected-item-info {
+    width: 500px;
+
+    & img {
+      border-radius: 20px;
+      box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.6);
+    }
   }
 }
