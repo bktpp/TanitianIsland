@@ -1,5 +1,5 @@
 body {
-  color: rgb(255, 119, 0);
+  color: #333336;
   background-color: rgba(0, 255, 255, 0.059);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -31,6 +31,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -41,7 +42,9 @@ li {
   display: flex;
 
   justify-content: space-between;
-  box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 2px -6px rgb(80, 80, 255), 0 2px 3px -4px rgb(80, 80, 255),
+    0 4px 3px -6px #00aaff, 0 6px 3px -8px rgb(80, 80, 255),
+    0 10px 5px -10px rgb(80, 80, 255);
 }
 
 .nav-links {
@@ -52,6 +55,14 @@ li {
 .nav-links ul {
   display: flex;
   justify-content: space-between;
+
+  & li {
+    transition: all 0.2s ease-in;
+  }
+
+  & li:hover {
+    transform: translateY(-3px) scale(1.1);
+  }
 }
 
 header {
@@ -153,11 +164,11 @@ header {
   & .about-images {
     display: flex;
     flex-wrap: wrap;
-    gap: 38px;
+    gap: 20px;
     padding-top: 50px;
     justify-content: center;
     & img {
-      height: 320px;
+      height: 300px;
       border-radius: 10px;
       box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.6);
     }
@@ -167,17 +178,23 @@ header {
 .food-container {
   display: flex;
   gap: 25px;
+  justify-content: center;
 
   & .food-col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 40%;
     line-height: 25px;
+
+    & div {
+      padding-top: 50px;
+    }
 
     & img {
       border-radius: 10px;
       box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.6);
+      height: 500px;
     }
   }
 }
