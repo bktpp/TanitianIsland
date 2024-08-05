@@ -187,6 +187,10 @@ header {
     width: 40%;
     line-height: 25px;
 
+    & .transport-pic img {
+      height: 300px;
+    }
+
     & div {
       padding-top: 50px;
     }
