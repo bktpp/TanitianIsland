@@ -1,8 +1,7 @@
 body {
   color: #333336;
   background-color: rgba(0, 255, 255, 0.059);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 img {
@@ -201,4 +200,17 @@ header {
       height: 500px;
     }
   }
+}
+
+.faq-container {
+  width: 70%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.book-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
 }
